@@ -1,0 +1,278 @@
+LAB 1-PID
+Modificari la adaugarea resturilor de cerinte pentru MenuCommands.cs, MainWindow.xaml si Tools.cs
+
+Tools.cs
+
+#region Mirror image
+        public static Image<Gray, byte> Mirror(Image<Gray, byte> inputImage)
+        {
+            Image<Gray, byte> result = new Image<Gray, byte>(inputImage.Size);
+            for (int y = 0; y < inputImage.Height; ++y)
+            {
+                for (int x = 0; x < inputImage.Width; ++x)
+                {
+                    result.Data[y, x, 0] = inputImage.Data[y, inputImage.Width - 1 - x, 0];
+                }
+            }
+            return result;
+        }
+
+        public static Image<Bgr, byte> Mirror(Image<Bgr, byte> inputImage)
+        {
+            Image<Bgr, byte> result = new Image<Bgr, byte>(inputImage.Size);
+            for (int y = 0; y < inputImage.Height; ++y)
+            {
+                for (int x = 0; x < inputImage.Width; ++x)
+                {
+                    result.Data[y, x, 0] = inputImage.Data[y, inputImage.Width - 1 - x, 0];
+                    result.Data[y, x, 1] = inputImage.Data[y, inputImage.Width - 1 - x, 1];
+                    result.Data[y, x, 2] = inputImage.Data[y, inputImage.Width - 1 - x, 2];
+                }
+            }
+            return result;
+        }
+        #endregion
+
+        #region Rotate image
+        public static Image<Gray, byte> RotateClockwise(Image<Gray, byte> inputImage)
+        {
+            // Dimensiunile se inversează
+            Image<Gray, byte> result = new Image<Gray, byte>(inputImage.Height, inputImage.Width);
+            for (int y = 0; y < inputImage.Height; ++y)
+            {
+                for (int x = 0; x < inputImage.Width; ++x)
+                {
+                    result.Data[x, inputImage.Height - 1 - y, 0] = inputImage.Data[y, x, 0];
+                }
+            }
+            return result;
+        }
+
+        public static Image<Bgr, byte> RotateClockwise(Image<Bgr, byte> inputImage)
+        {
+            Image<Bgr, byte> result = new Image<Bgr, byte>(inputImage.Height, inputImage.Width);
+            for (int y = 0; y < inputImage.Height; ++y)
+            {
+                for (int x = 0; x < inputImage.Width; ++x)
+                {
+                    result.Data[x, inputImage.Height - 1 - y, 0] = inputImage.Data[y, x, 0];
+                    result.Data[x, inputImage.Height - 1 - y, 1] = inputImage.Data[y, x, 1];
+                    result.Data[x, inputImage.Height - 1 - y, 2] = inputImage.Data[y, x, 2];
+                }
+            }
+            return result;
+        }
+
+        public static Image<Gray, byte> RotateAntiClockwise(Image<Gray, byte> inputImage)
+        {
+            Image<Gray, byte> result = new Image<Gray, byte>(inputImage.Height, inputImage.Width);
+            for (int y = 0; y < inputImage.Height; ++y)
+            {
+                for (int x = 0; x < inputImage.Width; ++x)
+                {
+                    result.Data[inputImage.Width - 1 - x, y, 0] = inputImage.Data[y, x, 0];
+                }
+            }
+            return result;
+        }
+
+        public static Image<Bgr, byte> RotateAntiClockwise(Image<Bgr, byte> inputImage)
+        {
+            Image<Bgr, byte> result = new Image<Bgr, byte>(inputImage.Height, inputImage.Width);
+            for (int y = 0; y < inputImage.Height; ++y)
+            {
+                for (int x = 0; x < inputImage.Width; ++x)
+                {
+                    result.Data[inputImage.Width - 1 - x, y, 0] = inputImage.Data[y, x, 0];
+                    result.Data[inputImage.Width - 1 - x, y, 1] = inputImage.Data[y, x, 1];
+                    result.Data[inputImage.Width - 1 - x, y, 2] = inputImage.Data[y, x, 2];
+                }
+            }
+            return result;
+        }
+        #endregion
+
+        #region Crop image
+        // Ne folosim de ROI (Region of Interest) din Emgu.CV pentru crop
+        public static Image<Gray, byte> Crop(Image<Gray, byte> inputImage, Rectangle roi, out double mean, out double stdDev)
+        {
+            inputImage.ROI = roi;
+            Image<Gray, byte> result = inputImage.Copy();
+            inputImage.ROI = Rectangle.Empty; // Resetăm ROI pe imaginea originală
+
+            CalculateStats(result, out mean, out stdDev);
+            return result;
+        }
+
+        public static Image<Bgr, byte> Crop(Image<Bgr, byte> inputImage, Rectangle roi, out double mean, out double stdDev)
+        {
+            inputImage.ROI = roi;
+            Image<Bgr, byte> result = inputImage.Copy();
+            inputImage.ROI = Rectangle.Empty;
+
+            // Pentru color, calculăm media și deviația transformând temporar în Gray
+            Image<Gray, byte> grayTemp = result.Convert<Gray, byte>();
+            CalculateStats(grayTemp, out mean, out stdDev);
+            return result;
+        }
+
+        private static void CalculateStats(Image<Gray, byte> img, out double mean, out double stdDev)
+        {
+            double sum = 0;
+            int totalPixels = img.Width * img.Height;
+
+            for (int y = 0; y < img.Height; y++)
+                for (int x = 0; x < img.Width; x++)
+                    sum += img.Data[y, x, 0];
+
+            mean = sum / totalPixels;
+
+            double varianceSum = 0;
+            for (int y = 0; y < img.Height; y++)
+                for (int x = 0; x < img.Width; x++)
+                    varianceSum += Math.Pow(img.Data[y, x, 0] - mean, 2);
+
+            stdDev = Math.Sqrt(varianceSum / totalPixels);
+        }
+        #endregion
+
+MainWindow.xaml
+<MenuItem Header="Mirror" 
+          Foreground="#1E1E1E"
+          Command="{Binding Path=MenuCommands.MirrorImageCommand}"
+          CommandParameter="{Binding ElementName=processedImageCanvas}"/>
+
+<MenuItem Header="Rotate" Foreground="#1E1E1E">
+    <MenuItem Header="Clockwise" 
+              Command="{Binding Path=MenuCommands.RotateCWImageCommand}"
+              CommandParameter="{Binding ElementName=processedImageCanvas}"/>
+    <MenuItem Header="Anti-clockwise" 
+              Command="{Binding Path=MenuCommands.RotateACWImageCommand}"
+              CommandParameter="{Binding ElementName=processedImageCanvas}"/>
+</MenuItem>
+
+<MenuItem Header="Crop" 
+          Foreground="#1E1E1E"
+          Command="{Binding Path=MenuCommands.EnableCropModeCommand}"
+          CommandParameter="{Binding ElementName=initialImageCanvas}"/>
+
+MenuCommands.cs
+#region Mirror image
+private ICommand _mirrorImageCommand;
+public ICommand MirrorImageCommand
+{
+    get
+    {
+        if (_mirrorImageCommand == null)
+            _mirrorImageCommand = new RelayCommand(MirrorImage);
+        return _mirrorImageCommand;
+    }
+}
+
+private void MirrorImage(object parameter)
+{
+    if (InitialImage == null) { MessageBox.Show("Please add an image!"); return; }
+    ClearProcessedCanvas(parameter as Canvas);
+
+    if (GrayInitialImage != null)
+    {
+        GrayProcessedImage = Tools.Mirror(GrayInitialImage);
+        ProcessedImage = Convert(GrayProcessedImage);
+    }
+    else if (ColorInitialImage != null)
+    {
+        ColorProcessedImage = Tools.Mirror(ColorInitialImage);
+        ProcessedImage = Convert(ColorProcessedImage);
+    }
+}
+#endregion
+
+#region Rotate image (Clockwise & Anti-Clockwise)
+private ICommand _rotateCWImageCommand;
+public ICommand RotateCWImageCommand
+{
+    get { return _rotateCWImageCommand ?? (_rotateCWImageCommand = new RelayCommand(RotateCWImage)); }
+}
+
+private void RotateCWImage(object parameter)
+{
+    if (InitialImage == null) { MessageBox.Show("Please add an image!"); return; }
+    ClearProcessedCanvas(parameter as Canvas);
+
+    if (GrayInitialImage != null)
+    {
+        GrayProcessedImage = Tools.RotateClockwise(GrayInitialImage);
+        ProcessedImage = Convert(GrayProcessedImage);
+    }
+    else if (ColorInitialImage != null)
+    {
+        ColorProcessedImage = Tools.RotateClockwise(ColorInitialImage);
+        ProcessedImage = Convert(ColorProcessedImage);
+    }
+}
+
+private ICommand _rotateACWImageCommand;
+public ICommand RotateACWImageCommand
+{
+    get { return _rotateACWImageCommand ?? (_rotateACWImageCommand = new RelayCommand(RotateACWImage)); }
+}
+
+private void RotateACWImage(object parameter)
+{
+    if (InitialImage == null) { MessageBox.Show("Please add an image!"); return; }
+    ClearProcessedCanvas(parameter as Canvas);
+
+    if (GrayInitialImage != null)
+    {
+        GrayProcessedImage = Tools.RotateAntiClockwise(GrayInitialImage);
+        ProcessedImage = Convert(GrayProcessedImage);
+    }
+    else if (ColorInitialImage != null)
+    {
+        ColorProcessedImage = Tools.RotateAntiClockwise(ColorInitialImage);
+        ProcessedImage = Convert(ColorProcessedImage);
+    }
+}
+#endregion
+
+#region Crop image
+private ICommand _enableCropModeCommand;
+public ICommand EnableCropModeCommand
+{
+    get { return _enableCropModeCommand ?? (_enableCropModeCommand = new RelayCommand(EnableCropMode)); }
+}
+
+private void EnableCropMode(object parameter)
+{
+    if (InitialImage == null) { MessageBox.Show("Please add an image!"); return; }
+    
+    // Atenție: Crop-ul implică interacțiunea cu mouse-ul.
+    // De obicei, setăm un flag aici pe care View-ul (MainWindow.xaml.cs) îl citește 
+    // pentru a permite desenarea dreptunghiului pe Canvas.
+    MessageBox.Show("Modul Crop activat. Te rog să desenezi un dreptunghi pe imaginea inițială pentru a decupa.");
+    
+    // Presupunând că ai o proprietate IsCropModeActive în ViewModel-ul tău:
+    // IsCropModeActive = true; 
+}
+
+// Această metodă ar trebui apelată din code-behind (MainWindow.xaml.cs) după ce utilizatorul ridică click-ul (MouseUp) și s-a definit dreptunghiul.
+public void ExecuteCrop(System.Drawing.Rectangle selectionRect)
+{
+    if (selectionRect.Width <= 0 || selectionRect.Height <= 0) return;
+
+    double mean, stdDev;
+
+    if (GrayInitialImage != null)
+    {
+        GrayProcessedImage = Tools.Crop(GrayInitialImage, selectionRect, out mean, out stdDev);
+        ProcessedImage = Convert(GrayProcessedImage);
+    }
+    else if (ColorInitialImage != null)
+    {
+        ColorProcessedImage = Tools.Crop(ColorInitialImage, selectionRect, out mean, out stdDev);
+        ProcessedImage = Convert(ColorProcessedImage);
+    }
+
+    MessageBox.Show($"Rezultate decupare:\nMedia (Mean): {mean:F2}\nAbaterea Pătratică (StdDev): {stdDev:F2}", "Statistici ROI");
+}
+#endregion
