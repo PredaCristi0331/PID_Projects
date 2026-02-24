@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gFF1K6U5wKM=",
+  "dgSpecHash": "uLJuWVl9vrs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Framework\\Framework.csproj",
+  "projectFilePath": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\Framework.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CRISTIAN\\.nuget\\packages\\emgucv\\3.1.0.1\\emgucv.3.1.0.1.nupkg.sha512",
     "C:\\Users\\CRISTIAN\\.nuget\\packages\\microsoft.netframework.referenceassemblies\\1.0.2\\microsoft.netframework.referenceassemblies.1.0.2.nupkg.sha512",

@@ -22,5 +22,20 @@ namespace Algorithms.Utilities
             return histogram;
         }
         #endregion
+
+        public static byte[] GetLinearLUT(double alpha, double beta)
+        {
+            byte[] lut = new byte[256];
+            for (int r = 0; r < 256; r++)
+            {
+                double val = alpha * r + beta;
+
+                if (val < 0) val = 0;
+                if (val > 255) val = 255;
+
+                lut[r] = (byte)val;
+            }
+            return lut;
+        }
     }
 }

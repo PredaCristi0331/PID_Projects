@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Y+ontxPgGMc=",
+  "dgSpecHash": "4BEsN8ykT3c=",
   "success": true,
-  "projectFilePath": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Algorithms\\Algorithms.csproj",
+  "projectFilePath": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Algorithms.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\CRISTIAN\\.nuget\\packages\\emgucv\\3.1.0.1\\emgucv.3.1.0.1.nupkg.sha512",
     "C:\\Users\\CRISTIAN\\.nuget\\packages\\opentk\\1.1.2225\\opentk.1.1.2225.nupkg.sha512",

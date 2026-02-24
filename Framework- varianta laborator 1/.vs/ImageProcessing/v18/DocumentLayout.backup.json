@@ -1,41 +1,49 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\",
+  "WorkspaceRootPath": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\algorithms\\tools\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\tools\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\framework\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\framework\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|solutionrelative:framework\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|c:\\users\\cristian\\onedrive\\desktop\\facultate\\anul ii\\semestrul ii (februarie 2026-iunie 2026)\\discipline optionale\\procesarea imaginilor digitale\\framework\\framework\\viewmodel\\commands\\menucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\framework\\viewmodel\\commands\\menucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|solutionrelative:framework\\viewmodel\\commands\\menucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\framework\\utilities\\uihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|c:\\users\\cristian\\git-projects\\pid_projects\\framework- varianta laborator 1\\algorithms\\sections\\pointwiseoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\sections\\pointwiseoperations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|c:\\users\\cristian\\git-projects\\pid_projects\\framework- varianta laborator 1\\algorithms\\utilities\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\utilities\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|c:\\users\\cristian\\git-projects\\pid_projects\\framework- varianta laborator 1\\algorithms\\tools\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\tools\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\framework\\utilities\\uihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|solutionrelative:framework\\utilities\\uihelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\framework\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\framework\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|solutionrelative:framework\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\framework\\utilities\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\framework\\utilities\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|solutionrelative:framework\\utilities\\filehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\framework\\utilities\\drawinghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\framework\\utilities\\drawinghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|solutionrelative:framework\\utilities\\drawinghelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\algorithms\\sections\\geometrictransformations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\algorithms\\sections\\geometrictransformations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\sections\\geometrictransformations.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\algorithms\\sections\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\algorithms\\sections\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\sections\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -46,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,49 +66,75 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Utils.cs",
+              "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Utilities\\Utils.cs",
+              "RelativeDocumentMoniker": "Algorithms\\Utilities\\Utils.cs",
+              "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Utilities\\Utils.cs*",
+              "RelativeToolTip": "Algorithms\\Utilities\\Utils.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T12:48:35.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "PointwiseOperations.cs",
+              "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Sections\\PointwiseOperations.cs",
+              "RelativeDocumentMoniker": "Algorithms\\Sections\\PointwiseOperations.cs",
+              "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Sections\\PointwiseOperations.cs*",
+              "RelativeToolTip": "Algorithms\\Sections\\PointwiseOperations.cs*",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADUAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-24T12:38:03.37Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MenuCommands.cs",
-              "DocumentMoniker": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Framework\\ViewModel\\Commands\\MenuCommands.cs",
+              "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\ViewModel\\Commands\\MenuCommands.cs",
               "RelativeDocumentMoniker": "Framework\\ViewModel\\Commands\\MenuCommands.cs",
-              "ToolTip": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Framework\\ViewModel\\Commands\\MenuCommands.cs",
-              "RelativeToolTip": "Framework\\ViewModel\\Commands\\MenuCommands.cs",
-              "ViewState": "AgIAAJICAAAAAAAAAAAowJUCAAAHAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\ViewModel\\Commands\\MenuCommands.cs*",
+              "RelativeToolTip": "Framework\\ViewModel\\Commands\\MenuCommands.cs*",
+              "ViewState": "AgIAAAEDAAAAAAAAAAAswAkDAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-17T13:08:41.19Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Framework\\View\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\View\\MainWindow.xaml",
               "RelativeDocumentMoniker": "Framework\\View\\MainWindow.xaml",
-              "ToolTip": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Framework\\View\\MainWindow.xaml",
-              "RelativeToolTip": "Framework\\View\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\View\\MainWindow.xaml*",
+              "RelativeToolTip": "Framework\\View\\MainWindow.xaml*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-17T13:05:16.912Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Tools.cs",
-              "DocumentMoniker": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Algorithms\\Tools\\Tools.cs",
+              "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Tools\\Tools.cs",
               "RelativeDocumentMoniker": "Algorithms\\Tools\\Tools.cs",
-              "ToolTip": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Algorithms\\Tools\\Tools.cs",
-              "RelativeToolTip": "Algorithms\\Tools\\Tools.cs",
-              "ViewState": "AgIAALEAAAAAAAAAAAAowLwAAAAMAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Tools\\Tools.cs*",
+              "RelativeToolTip": "Algorithms\\Tools\\Tools.cs*",
+              "ViewState": "AgIAAAEBAAAAAAAAAAAswBcBAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-17T12:37:18.525Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Framework\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\App.xaml",
               "RelativeDocumentMoniker": "Framework\\App.xaml",
-              "ToolTip": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Framework\\App.xaml",
+              "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\App.xaml",
               "RelativeToolTip": "Framework\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-02-13T07:14:53.843Z",
@@ -108,24 +142,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "UiHelper.cs",
-              "DocumentMoniker": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Framework\\Utilities\\UiHelper.cs",
+              "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\Utilities\\UiHelper.cs",
               "RelativeDocumentMoniker": "Framework\\Utilities\\UiHelper.cs",
-              "ToolTip": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Framework\\Utilities\\UiHelper.cs",
+              "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\Utilities\\UiHelper.cs",
               "RelativeToolTip": "Framework\\Utilities\\UiHelper.cs",
               "ViewState": "AgIAAGcAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-13T07:14:23.543Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-13T07:14:23.543Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "DrawingHelper.cs",
-              "DocumentMoniker": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Framework\\Utilities\\DrawingHelper.cs",
+              "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\Utilities\\DrawingHelper.cs",
               "RelativeDocumentMoniker": "Framework\\Utilities\\DrawingHelper.cs",
-              "ToolTip": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Framework\\Utilities\\DrawingHelper.cs",
+              "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\Utilities\\DrawingHelper.cs",
               "RelativeToolTip": "Framework\\Utilities\\DrawingHelper.cs",
               "ViewState": "AgIAAHgAAAAAAAAAAAAiwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -133,11 +166,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "FileHelper.cs",
-              "DocumentMoniker": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Framework\\Utilities\\FileHelper.cs",
+              "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\Utilities\\FileHelper.cs",
               "RelativeDocumentMoniker": "Framework\\Utilities\\FileHelper.cs",
-              "ToolTip": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Framework\\Utilities\\FileHelper.cs",
+              "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\Utilities\\FileHelper.cs",
               "RelativeToolTip": "Framework\\Utilities\\FileHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -145,11 +178,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "GeometricTransformations.cs",
-              "DocumentMoniker": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Algorithms\\Sections\\GeometricTransformations.cs",
+              "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Sections\\GeometricTransformations.cs",
               "RelativeDocumentMoniker": "Algorithms\\Sections\\GeometricTransformations.cs",
-              "ToolTip": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Algorithms\\Sections\\GeometricTransformations.cs",
+              "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Sections\\GeometricTransformations.cs",
               "RelativeToolTip": "Algorithms\\Sections\\GeometricTransformations.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -157,11 +190,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Filters.cs",
-              "DocumentMoniker": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Algorithms\\Sections\\Filters.cs",
+              "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Sections\\Filters.cs",
               "RelativeDocumentMoniker": "Algorithms\\Sections\\Filters.cs",
-              "ToolTip": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Algorithms\\Sections\\Filters.cs",
+              "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Sections\\Filters.cs",
               "RelativeToolTip": "Algorithms\\Sections\\Filters.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

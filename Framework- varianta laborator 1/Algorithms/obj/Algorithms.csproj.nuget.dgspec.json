@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Algorithms\\Algorithms.csproj": {}
+    "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Algorithms.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Algorithms\\Algorithms.csproj": {
+    "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Algorithms.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Algorithms\\Algorithms.csproj",
+        "projectUniqueName": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Algorithms.csproj",
         "projectName": "Algorithms",
-        "projectPath": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Algorithms\\Algorithms.csproj",
+        "projectPath": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Algorithms.csproj",
         "packagesPath": "C:\\Users\\CRISTIAN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CRISTIAN\\OneDrive\\Desktop\\FACULTATE\\Anul II\\SEMESTRUL II (FEBRUARIE 2026-IUNIE 2026)\\DISCIPLINE OPTIONALE\\PROCESAREA IMAGINILOR DIGITALE\\Framework\\Algorithms\\obj\\",
+        "outputPath": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "UsingMicrosoftNETSdk": false,

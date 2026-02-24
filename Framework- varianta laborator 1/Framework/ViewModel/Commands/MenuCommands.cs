@@ -681,6 +681,117 @@ namespace Framework.ViewModel
         }
         #endregion
 
+        #region Contrast and Brightness
+        private ICommand _contrastBrightnessCommand;
+        public ICommand ContrastBrightnessCommand
+        {
+            get
+            {
+                if (_contrastBrightnessCommand == null)
+                    _contrastBrightnessCommand = new RelayCommand(ContrastBrightness);
+                return _contrastBrightnessCommand;
+            }
+        }
+
+        private void ContrastBrightness(object parameter)
+        {
+            if (InitialImage == null)
+            {
+                MessageBox.Show("Please add an image!");
+                return;
+            }
+
+            ClearProcessedCanvas(parameter as Canvas);
+
+            List<string> labels = new List<string> { "Alpha (Contrast > 0):", "Beta (Brightness):" };
+            DialogWindow diag = new DialogWindow(_mainVM, labels);
+            diag.ShowDialog();
+
+            List<double> values = diag.GetValues();
+
+            if (values == null || values.Count < 2) return; 
+
+            double alpha = values[0];
+            double beta = values[1];
+
+            if (alpha <= 0)
+            {
+                MessageBox.Show("Alpha must be strictly positive (> 0)!");
+                return;
+            }
+
+            
+            byte[] lut = PointwiseOperations.GetLinearLUT(alpha, beta);
+
+            
+            if (GrayInitialImage != null)
+            {
+                GrayProcessedImage = PointwiseOperations.ApplyLUT(GrayInitialImage, lut);
+                ProcessedImage = Convert(GrayProcessedImage);
+            }
+            else if (ColorInitialImage != null)
+            {
+                ColorProcessedImage = PointwiseOperations.ApplyLUT(ColorInitialImage, lut);
+                ProcessedImage = Convert(ColorProcessedImage);
+            }
+        }
+        #endregion
+
+        #region Gamma Operator
+        private ICommand _gammaOperatorCommand;
+        public ICommand GammaOperatorCommand
+        {
+            get
+            {
+                if (_gammaOperatorCommand == null)
+                    _gammaOperatorCommand = new RelayCommand(GammaOperator);
+                return _gammaOperatorCommand;
+            }
+        }
+
+        private void GammaOperator(object parameter)
+        {
+            if (InitialImage == null)
+            {
+                MessageBox.Show("Please add an image!");
+                return;
+            }
+
+            ClearProcessedCanvas(parameter as Canvas);
+
+            List<string> labels = new List<string> { "Gamma (> 0):" };
+            DialogWindow diag = new DialogWindow(_mainVM, labels);
+            diag.ShowDialog();
+
+            List<double> values = diag.GetValues();
+
+            if (values == null || values.Count < 1) return;
+
+            double gamma = values[0];
+
+            if (gamma <= 0)
+            {
+                MessageBox.Show("Gamma must be strictly positive (> 0)!");
+                return;
+            }
+
+            
+            byte[] lut = PointwiseOperations.GetGammaLUT(gamma);
+
+            
+            if (GrayInitialImage != null)
+            {
+                GrayProcessedImage = PointwiseOperations.ApplyLUT(GrayInitialImage, lut);
+                ProcessedImage = Convert(GrayProcessedImage);
+            }
+            else if (ColorInitialImage != null)
+            {
+                ColorProcessedImage = PointwiseOperations.ApplyLUT(ColorInitialImage, lut);
+                ProcessedImage = Convert(ColorProcessedImage);
+            }
+        }
+        #endregion
+
         #region Convert color image to grayscale image
         private ICommand _convertImageToGrayscaleCommand;
         public ICommand ConvertImageToGrayscaleCommand
