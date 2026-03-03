@@ -74,5 +74,39 @@ namespace Algorithms.Sections
             return result;
         }
         #endregion
+
+        #region EM-operator
+        public static byte[] GetEMOperatorLUT(double m, double E)
+        {
+            byte[] lut = new byte[256];
+
+            
+            double mToE = Math.Pow(m, E);
+            double val255ToE = Math.Pow(255, E);
+
+            
+            double c = (1.0 / 255.0) * (mToE / (val255ToE + mToE));
+
+            for (int r = 0; r < 256; r++)
+            {
+                double rToE = Math.Pow(r, E);
+                double denominator = rToE + mToE;
+
+                double val = 0;
+                
+                if (denominator > 0)
+                {
+                    val = 255.0 * ((rToE / denominator) + (c * r));
+                }
+
+               
+                if (val < 0) val = 0;
+                if (val > 255) val = 255;
+
+                lut[r] = (byte)val;
+            }
+            return lut;
+        }
+        #endregion 
     }
 }

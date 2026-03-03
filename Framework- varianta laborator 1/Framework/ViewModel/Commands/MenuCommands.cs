@@ -792,6 +792,57 @@ namespace Framework.ViewModel
         }
         #endregion
 
+        #region EM Operator
+        private ICommand _emOperatorCommand;
+        public ICommand EMOperatorCommand
+        {
+            get
+            {
+                if (_emOperatorCommand == null)
+                    _emOperatorCommand = new RelayCommand(EMOperator);
+                return _emOperatorCommand;
+            }
+        }
+
+        private void EMOperator(object parameter)
+        {
+            if (InitialImage == null)
+            {
+                MessageBox.Show("Please add an image!");
+                return;
+            }
+
+            ClearProcessedCanvas(parameter as Canvas);
+
+            // Cerem m (valoarea de prag) și E (panta) de la utilizator
+            List<string> labels = new List<string> { "m (threshold):", "E (slope):" };
+            DialogWindow diag = new DialogWindow(_mainVM, labels);
+            diag.ShowDialog();
+
+            List<double> values = diag.GetValues();
+
+            if (values == null || values.Count < 2) return; // Utilizatorul a închis fereastra
+
+            double m = values[0];
+            double E = values[1];
+
+            
+            byte[] lut = PointwiseOperations.GetEMOperatorLUT(m, E);
+
+            // 2. Aplicăm LUT utilizând metodele ApplyLUT deja implementate
+            if (GrayInitialImage != null)
+            {
+                GrayProcessedImage = Tools.ApplyLUT(GrayInitialImage, lut);
+                ProcessedImage = Convert(GrayProcessedImage);
+            }
+            else if (ColorInitialImage != null)
+            {
+                ColorProcessedImage = Tools.ApplyLUT(ColorInitialImage, lut);
+                ProcessedImage = Convert(ColorProcessedImage);
+            }
+        }
+        #endregion
+
         #region Convert color image to grayscale image
         private ICommand _convertImageToGrayscaleCommand;
         public ICommand ConvertImageToGrayscaleCommand
