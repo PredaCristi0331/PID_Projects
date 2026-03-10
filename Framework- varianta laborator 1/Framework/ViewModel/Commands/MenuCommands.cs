@@ -885,6 +885,57 @@ namespace Framework.ViewModel
         #region Thresholding
         #endregion
 
+        #region Otsu Threshold
+        private ICommand _otsuThresholdCommand;
+        public ICommand OtsuThresholdCommand
+        {
+            get
+            {
+                if (_otsuThresholdCommand == null)
+                    _otsuThresholdCommand = new RelayCommand(OtsuThreshold);
+                return _otsuThresholdCommand;
+            }
+        }
+
+        private void OtsuThreshold(object parameter)
+        {
+            if (InitialImage == null)
+            {
+                MessageBox.Show("Please add an image!");
+                return;
+            }
+
+            ClearProcessedCanvas(parameter as Canvas);
+
+            byte optimalT = 0;
+
+            if (GrayInitialImage != null)
+            {
+                
+                optimalT = Thresholding.GetOtsuThreshold(GrayInitialImage);
+
+                
+                GrayProcessedImage = Tools.Binary(GrayInitialImage, optimalT);
+                ProcessedImage = Convert(GrayProcessedImage);
+            }
+            else if (ColorInitialImage != null)
+            {
+                
+                Image<Gray, byte> grayTemp = Tools.Convert(ColorInitialImage);
+
+                
+                optimalT = Thresholding.GetOtsuThreshold(grayTemp);
+
+                
+                GrayProcessedImage = Tools.Binary(grayTemp, optimalT);
+                ProcessedImage = Convert(GrayProcessedImage);
+            }
+
+            
+            MessageBox.Show($"Binarizarea Otsu a fost aplicată cu succes!\nPragul global calculat automat este: {optimalT}", "Otsu Threshold Result");
+        }
+        #endregion
+
         #region Filters
         #endregion
 
