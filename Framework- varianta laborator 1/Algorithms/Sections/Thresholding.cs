@@ -22,37 +22,42 @@ namespace Algorithms.Sections
 
             
             double[] p = new double[256];
-            for (int k = 0; k < 256; k++)
+            double mu = 0;
+            for (int k = 0; k < 255; k++)
             {
                 p[k] = (double)H[k] / n;
+                mu += k * p[k];
             }
 
             byte T = 0;
-            double maxInterVariance = 0;
+            double maxInterVariance = 0.0;
+            double P1 = p[0];
+            double mu1 = 0;
 
-            
+
             for (int t = 1; t < 254; t++)
             {
-                double P1 = 0;
+                P1 += p[t];
                 for (int k = 0; k <= t; k++)
                 {
                     P1 += p[k];
                 }
 
                 double P2 = 1.0 - P1;
+                double mu2 = mu - mu1;
 
                 
                 if (P1 == 0 || P2 == 0) continue;
 
-                double mu1 = 0;
+                
                 for (int k = 0; k <= t; k++)
                 {
                     mu1 += (k * p[k]);
                 }
                 mu1 /= P1;
 
-                double mu2 = 0;
-                for (int k = t + 1; k < 256; k++)
+                
+                for (int k = t + 1; k < 255; k++)
                 {
                     mu2 += (k * p[k]);
                 }

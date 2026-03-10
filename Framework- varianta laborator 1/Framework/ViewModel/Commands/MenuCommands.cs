@@ -931,7 +931,7 @@ namespace Framework.ViewModel
                 ProcessedImage = Convert(GrayProcessedImage);
             }
 
-            
+  
             MessageBox.Show($"Binarizarea Otsu a fost aplicată cu succes!\nPragul global calculat automat este: {optimalT}", "Otsu Threshold Result");
         }
         #endregion
