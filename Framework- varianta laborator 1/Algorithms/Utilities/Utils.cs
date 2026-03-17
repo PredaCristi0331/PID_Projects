@@ -37,5 +37,13 @@ namespace Algorithms.Utilities
             }
             return lut;
         }
+
+        public static byte Clamp(double s)
+        {
+            if (s < 0) return 0;
+            if (s > 255) return 255;
+            s += 0.5;
+            return (byte)s;
+        }
     }
 }

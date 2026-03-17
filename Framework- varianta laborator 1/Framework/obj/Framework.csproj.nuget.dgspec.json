@@ -32,6 +32,7 @@
         },
         "frameworks": {
           "net48": {
+            "framework": "net48",
             "projectReferences": {}
           }
         },
@@ -43,6 +44,7 @@
       },
       "frameworks": {
         "net48": {
+          "framework": "net48",
           "dependencies": {
             "EmguCV": {
               "target": "Package",
@@ -94,6 +96,7 @@
         },
         "frameworks": {
           "net48": {
+            "framework": "net48",
             "projectReferences": {
               "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Algorithms.csproj": {
                 "projectPath": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Algorithms.csproj"
@@ -109,6 +112,7 @@
       },
       "frameworks": {
         "net48": {
+          "framework": "net48",
           "dependencies": {
             "EmguCV": {
               "target": "Package",

@@ -880,11 +880,12 @@ namespace Framework.ViewModel
         #endregion
 
         #region Pointwise operations
+
+
         #endregion
 
         #region Thresholding
-        #endregion
-
+        
         #region Otsu Threshold
         private ICommand _otsuThresholdCommand;
         public ICommand OtsuThresholdCommand
@@ -936,7 +937,52 @@ namespace Framework.ViewModel
         }
         #endregion
 
+        #endregion
+
         #region Filters
+
+        #region Custom filter 1
+        private ICommand _customFilter1Command;
+        public ICommand CustomFilter1Command
+        {
+            get
+            {
+                if (_customFilter1Command == null)
+                    _customFilter1Command = new RelayCommand(CustomFilter1);
+                return _customFilter1Command;
+            }
+        }
+        private void CustomFilter1(object parameter)
+        {
+            if (InitialImage == null)
+            {
+                MessageBox.Show("Please add an image!");
+                return;
+            }
+
+            ClearProcessedCanvas(parameter as Canvas);
+
+            double[,] kernel = new double[3, 3]
+            {
+                { 0.1, 0.1, 0.1 },
+                { 0.1, 0.2, 0.1 },
+                { 0.1, 0.1, 0.1 },
+            };
+
+            if (GrayInitialImage != null)
+            {
+
+                GrayProcessedImage = Filters.ApplyFilter(GrayInitialImage, kernel);
+                ProcessedImage = Convert(GrayProcessedImage);
+            }
+            else if (ColorInitialImage != null)
+            {
+                ColorProcessedImage = Filters.ApplyFilter(ColorInitialImage, kernel);
+                ProcessedImage = Convert(ColorProcessedImage);
+            }
+        }
+        #endregion
+
         #endregion
 
         #region Morphological operations
