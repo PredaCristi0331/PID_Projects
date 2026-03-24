@@ -983,6 +983,41 @@ namespace Framework.ViewModel
         }
         #endregion
 
+        #region
+        #region Gaussian Filter
+        private ICommand _gaussianFilterCommand;
+        public ICommand GaussianFilterCommand => _gaussianFilterCommand ?? (_gaussianFilterCommand = new RelayCommand(ApplyGaussianFilter));
+
+        private void ApplyGaussianFilter(object parameter)
+        {
+            if (InitialImage == null) { MessageBox.Show("Please add an image!"); return; }
+            ClearProcessedCanvas(parameter as Canvas);
+
+            // Cerem parametrii sigma de la utilizator
+            List<string> labels = new List<string> { "Sigma X:", "Sigma Y:" };
+            DialogWindow diag = new DialogWindow(_mainVM, labels);
+            diag.ShowDialog();
+
+            List<double> values = diag.GetValues();
+            if (values == null || values.Count < 2) return;
+
+            double sigmaX = values[0];
+            double sigmaY = values[1];
+
+            if (GrayInitialImage != null)
+            {
+                GrayProcessedImage = Filters.GaussFiltering(GrayInitialImage, sigmaX, sigmaY);
+                ProcessedImage = Convert(GrayProcessedImage);
+            }
+            else if (ColorInitialImage != null)
+            {
+                ColorProcessedImage = Filters.GaussFiltering(ColorInitialImage, sigmaX, sigmaY);
+                ProcessedImage = Convert(ColorProcessedImage);
+            }
+        }
+        #endregion
+        #endregion
+
         #endregion
 
         #region Morphological operations
