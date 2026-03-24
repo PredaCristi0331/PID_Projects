@@ -148,6 +148,12 @@ namespace Algorithms.Sections
             int wOffset = w / 2;
             Image<TColor,TDepth> result = tempImage.Clone();
 
+            Image<TColor, TDepth> borderImage =
+                new Image<TColor,TDepth>(tempImage.Width + 2 * wOffset, tempImage.Height + 2 * hOffset);
+
+            CvInvoke.CopyMakeBorder(tempImage, borderImage,
+                hOffset, hOffset, wOffset, wOffset, Emgu.CV.CvEnum.BorderType.Reflect101);
+
             for (int y = h / 2; y < tempImage.Height - h / 2; y++)
             {
                 for (int x = w / 2; x < tempImage.Width - w / 2; x++)
