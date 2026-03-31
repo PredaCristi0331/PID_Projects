@@ -1016,7 +1016,52 @@ namespace Framework.ViewModel
             }
         }
         #endregion
+
+        #region Directional Sobel Edge Detection
+        private ICommand _directionalSobelCommand;
+        public ICommand DirectionalSobelCommand => _directionalSobelCommand ?? (_directionalSobelCommand = new RelayCommand(ApplyDirectionalSobel));
+
+        private void ApplyDirectionalSobel(object parameter)
+        {
+            if (InitialImage == null) { MessageBox.Show("Please add an image!"); return; }
+            ClearProcessedCanvas(parameter as Canvas);
+
+
+            List<string> labels = new List<string> {
+        "Threshold T:",
+        "Target Angle \u03B8 (degrees):",
+        "Deviation \u00B1 (degrees):"
+    };
+
+            DialogWindow diag = new DialogWindow(_mainVM, labels);
+            diag.ShowDialog();
+
+            List<double> values = diag.GetValues();
+            if (values == null || values.Count < 3) return;
+
+            double threshold = values[0];
+            double targetAngle = values[1];
+            double deviation = values[2];
+
+
+            Image<Gray, byte> processImage;
+            if (ColorInitialImage != null)
+            {
+                processImage = Tools.Convert(ColorInitialImage);
+            }
+            else
+            {
+                processImage = GrayInitialImage;
+            }
+
+
+            GrayProcessedImage = Filters.DirectionalSobel(processImage, threshold, targetAngle, deviation);
+            ProcessedImage = Convert(GrayProcessedImage);
+        }
         #endregion
+        #endregion
+
+
 
         #endregion
 
@@ -1027,6 +1072,8 @@ namespace Framework.ViewModel
         #endregion
 
         #region Segmentation
+
+
         #endregion
 
         #region Use processed image as initial image
@@ -1067,5 +1114,8 @@ namespace Framework.ViewModel
             ClearProcessedCanvas(canvases[1] as Canvas);
         }
         #endregion
+
+
+
     }
 }

@@ -181,5 +181,72 @@ namespace Algorithms.Sections
 
         #endregion
 
+        #region Directional Sobel Edge Detection
+        public static Image<Gray, byte> DirectionalSobel(Image<Gray, byte> inputImage, double threshold, double targetAngleDeg, double deviationDeg)
+        {
+            int width = inputImage.Width;
+            int height = inputImage.Height;
+
+            
+            Image<Gray, byte> result = new Image<Gray, byte>(width, height);
+
+
+            var inData = inputImage.Convert<Gray, int>();
+            byte[,,] outData = result.Data;
+
+            double targetNormalized = targetAngleDeg % 180.0;
+            if (targetNormalized < 0) targetNormalized += 180.0;
+
+            
+            for (int y = 1; y < height - 1; y++)
+            {
+                for (int x = 1; x < width - 1; x++)
+                {
+
+                    int f_x = -inData.Data[y - 1, x - 1, 0] + inData.Data[y - 1, x + 1, 0]
+                               - 2 * inData.Data[y, x - 1, 0] + 2 * inData.Data[y, x + 1, 0]
+                               - inData.Data[y + 1, x - 1, 0] + inData.Data[y + 1, x + 1, 0];
+
+                   int f_y = -inData.Data[y - 1, x - 1, 0] - 2 * inData.Data[y - 1, x, 0] - inData.Data[y - 1, x + 1, 0]
+                                + inData.Data[y + 1, x - 1, 0] + 2 * inData.Data[y + 1, x, 0] + inData.Data[y + 1, x + 1, 0];
+
+
+                    double nGrad = Math.Sqrt(Math.Pow(f_x,2) + Math.Pow(f_y,2));
+
+                    if (nGrad > threshold) 
+                    {
+                        
+                        double thetaRad = Math.Atan2(f_y, f_x);
+                        double thetaDeg = thetaRad * (180.0 / Math.PI);
+
+                        double edgeAngle = thetaDeg + 90.0;
+
+                       
+                        edgeAngle = edgeAngle % 180.0;
+                        if (edgeAngle < 0) edgeAngle += 180.0;
+
+                        
+                        double diff = Math.Abs(edgeAngle - targetNormalized);
+                        if (diff > 90.0) diff = 180.0 - diff;
+
+                        if (diff <= deviationDeg)
+                        {
+                            outData[y, x, 0] = 255; 
+                        }
+                        else
+                        {
+                            outData[y, x, 0] = 0;   
+                        }
+                    }
+                    else
+                    {
+                        outData[y, x, 0] = 0; 
+                    }
+                }
+            }
+            return result;
+        }
+        #endregion
+
     }
 }
