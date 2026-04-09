@@ -814,14 +814,13 @@ namespace Framework.ViewModel
 
             ClearProcessedCanvas(parameter as Canvas);
 
-            // Cerem m (valoarea de prag) și E (panta) de la utilizator
             List<string> labels = new List<string> { "m (threshold):", "E (slope):" };
             DialogWindow diag = new DialogWindow(_mainVM, labels);
             diag.ShowDialog();
 
             List<double> values = diag.GetValues();
 
-            if (values == null || values.Count < 2) return; // Utilizatorul a închis fereastra
+            if (values == null || values.Count < 2) return; 
 
             double m = values[0];
             double E = values[1];
@@ -829,7 +828,7 @@ namespace Framework.ViewModel
             
             byte[] lut = PointwiseOperations.GetEMOperatorLUT(m, E);
 
-            // 2. Aplicăm LUT utilizând metodele ApplyLUT deja implementate
+            
             if (GrayInitialImage != null)
             {
                 GrayProcessedImage = Tools.ApplyLUT(GrayInitialImage, lut);
@@ -993,7 +992,6 @@ namespace Framework.ViewModel
             if (InitialImage == null) { MessageBox.Show("Please add an image!"); return; }
             ClearProcessedCanvas(parameter as Canvas);
 
-            // Cerem parametrii sigma de la utilizator
             List<string> labels = new List<string> { "Sigma X:", "Sigma Y:" };
             DialogWindow diag = new DialogWindow(_mainVM, labels);
             diag.ShowDialog();

@@ -3,11 +3,11 @@
   "WorkspaceRootPath": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\framework\\viewmodel\\commands\\menucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|c:\\users\\cristian\\git-projects\\pid_projects\\framework- varianta laborator 1\\framework\\viewmodel\\commands\\menucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|solutionrelative:framework\\viewmodel\\commands\\menucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|c:\\users\\cristian\\git-projects\\pid_projects\\framework- varianta laborator 1\\algorithms\\sections\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\algorithms\\sections\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\sections\\filters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -54,7 +54,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
@@ -64,7 +64,7 @@
               "RelativeDocumentMoniker": "Framework\\ViewModel\\Commands\\MenuCommands.cs",
               "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\ViewModel\\Commands\\MenuCommands.cs",
               "RelativeToolTip": "Framework\\ViewModel\\Commands\\MenuCommands.cs",
-              "ViewState": "AgIAACEEAAAAAAAAAAAuwDIEAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAJgAAAAAAAAAAAAAAC8DAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-17T13:08:41.19Z",
               "EditorCaption": ""
@@ -78,8 +78,7 @@
               "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\View\\MainWindow.xaml",
               "RelativeToolTip": "Framework\\View\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-02-17T13:05:16.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-17T13:05:16.912Z"
             },
             {
               "$type": "Document",
@@ -91,8 +90,7 @@
               "RelativeToolTip": "Algorithms\\Sections\\Filters.cs",
               "ViewState": "AgIAAMUAAAAAAAAAAAAwwK8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-13T07:13:36.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-13T07:13:36.697Z"
             },
             {
               "$type": "Document",
