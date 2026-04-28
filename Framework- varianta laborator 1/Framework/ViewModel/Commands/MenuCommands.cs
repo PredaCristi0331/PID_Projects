@@ -1064,7 +1064,81 @@ namespace Framework.ViewModel
         #endregion
 
         #region Morphological operations
+
+        #region Morphological Operations
+
+        private void ExecuteMorphology(string operationType, object parameter)
+        {
+            if (InitialImage == null)
+            {
+                MessageBox.Show("Please add an image first!");
+                return;
+            }
+
+
+            List<string> labels = new List<string> {
+        "Height (h):",
+        "Width (w):",
+        "Threshold (T):",
+        "Option (1-White, 0-Black):"
+    };
+
+            DialogWindow diag = new DialogWindow(_mainVM, labels);
+            diag.ShowDialog();
+
+            List<double> values = diag.GetValues();
+
+            if (values == null || values.Count < 4) return;
+
+            int h = (int)values[0];
+            int w = (int)values[1];
+            byte T = (byte)values[2];
+            int opt = (int)values[3];
+
+
+            Image<Gray, byte> grayInput = (GrayInitialImage != null)
+                ? GrayInitialImage
+                : Tools.Convert(ColorInitialImage);
+            GrayProcessedImage = MorphologicalOperations.Erosion(grayInput, h, w, T, opt);
+
+            ClearProcessedCanvas(parameter as Canvas);
+
+
+            switch (operationType)
+            {
+                case "Dilation":
+                    GrayProcessedImage = MorphologicalOperations.Dilation(grayInput, h, w, T, opt);
+                    break;
+                case "Erosion":
+                    GrayProcessedImage = MorphologicalOperations.Erosion(grayInput, h, w, T, opt);
+                    break;
+                case "Opening":
+                    GrayProcessedImage = MorphologicalOperations.Opening(grayInput, h, w, T, opt);
+                    break;
+                case "Closing":
+                    GrayProcessedImage = MorphologicalOperations.Closing(grayInput, h, w, T, opt);
+                    break;
+            }
+
+
+            ProcessedImage = Convert(GrayProcessedImage);
+        }
+
+        private ICommand _dilationCommand;
+        public ICommand DilationCommand => _dilationCommand ?? (_dilationCommand = new RelayCommand(p => ExecuteMorphology("Dilation", p)));
+
+        private ICommand _erosionCommand;
+        public ICommand ErosionCommand => _erosionCommand ?? (_erosionCommand = new RelayCommand(p => ExecuteMorphology("Erosion", p)));
+
+        private ICommand _openingCommand;
+        public ICommand OpeningCommand => _openingCommand ?? (_openingCommand = new RelayCommand(p => ExecuteMorphology("Opening", p)));
+
+        private ICommand _closingCommand;
+        public ICommand ClosingCommand => _closingCommand ?? (_closingCommand = new RelayCommand(p => ExecuteMorphology("Closing", p)));
+
         #endregion
+        #endregion
+
 
         #region Geometric transformations
         #endregion
