@@ -259,7 +259,11 @@ CommandParameter="{Binding ElementName=processedImageCanvas}"/>
                     <MenuItem Header="Erosion" Command="{Binding Path=MenuCommands.ErosionCommand}" CommandParameter="{Binding ElementName=processedImageCanvas}"/>
                     <MenuItem Header="Opening" Command="{Binding Path=MenuCommands.OpeningCommand}" CommandParameter="{Binding ElementName=processedImageCanvas}"/>
                     <MenuItem Header="Closing" Command="{Binding Path=MenuCommands.ClosingCommand}" CommandParameter="{Binding ElementName=processedImageCanvas}"/>
+                    <MenuItem Header="Connected Components" 
+          Command="{Binding Path=MenuCommands.ConnectedComponentsCommand}" 
+          CommandParameter="{Binding ElementName=processedImageCanvas}"/>
                 </MenuItem>
+                
             </MenuItem>
 
             <MenuItem Header="Geometric transformations"

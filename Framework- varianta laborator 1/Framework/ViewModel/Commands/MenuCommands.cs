@@ -1137,6 +1137,34 @@ namespace Framework.ViewModel
         public ICommand ClosingCommand => _closingCommand ?? (_closingCommand = new RelayCommand(p => ExecuteMorphology("Closing", p)));
 
         #endregion
+
+        #region Connected Components Command
+        private ICommand _connectedComponentsCommand;
+        public ICommand ConnectedComponentsCommand => _connectedComponentsCommand ?? (_connectedComponentsCommand = new RelayCommand(ApplyConnectedComponents));
+
+        private void ApplyConnectedComponents(object parameter)
+        {
+            if (InitialImage == null) { MessageBox.Show("Please add an image!"); return; }
+
+            List<string> labels = new List<string> { "Threshold (T):" };
+            DialogWindow diag = new DialogWindow(_mainVM, labels);
+            diag.ShowDialog();
+
+            List<double> values = diag.GetValues();
+            if (values == null || values.Count < 1) return;
+
+            byte T = (byte)values[0];
+            ClearProcessedCanvas(parameter as Canvas);
+
+            
+            Image<Gray, byte> input = GrayInitialImage ?? Tools.Convert(ColorInitialImage);
+
+            
+            ColorProcessedImage = MorphologicalOperations.ConnectedComponents(input, T);
+            ProcessedImage = Convert(ColorProcessedImage);
+        }
+        #endregion
+
         #endregion
 
 

@@ -7,7 +7,11 @@
       "RelativeMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|solutionrelative:framework\\view\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|c:\\users\\cristian\\git-projects\\pid_projects\\framework- varianta laborator 1\\framework\\viewmodel\\commands\\menucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|c:\\users\\cristian\\git-projects\\pid_projects\\framework- varianta laborator 1\\algorithms\\tools\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2204949-5A56-49A4-9EF9-E4A177560169}|Algorithms\\Algorithms.csproj|solutionrelative:algorithms\\tools\\tools.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\framework\\viewmodel\\commands\\menucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{46916620-F543-4A92-93C0-F8FBEFECFBD6}|Framework\\Framework.csproj|solutionrelative:framework\\viewmodel\\commands\\menucommands.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -50,7 +54,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,26 +66,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "Tools.cs",
+              "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Tools\\Tools.cs",
+              "RelativeDocumentMoniker": "Algorithms\\Tools\\Tools.cs",
+              "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Tools\\Tools.cs",
+              "RelativeToolTip": "Algorithms\\Tools\\Tools.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-05T11:27:20.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MorphologicalOperations.cs",
               "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Sections\\MorphologicalOperations.cs",
               "RelativeDocumentMoniker": "Algorithms\\Sections\\MorphologicalOperations.cs",
               "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Sections\\MorphologicalOperations.cs*",
               "RelativeToolTip": "Algorithms\\Sections\\MorphologicalOperations.cs*",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAYwHMAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAALAAAAAAAAAAAAAawLwAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-28T09:24:52.688Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MenuCommands.cs",
               "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\ViewModel\\Commands\\MenuCommands.cs",
               "RelativeDocumentMoniker": "Framework\\ViewModel\\Commands\\MenuCommands.cs",
               "ToolTip": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\ViewModel\\Commands\\MenuCommands.cs*",
               "RelativeToolTip": "Framework\\ViewModel\\Commands\\MenuCommands.cs*",
-              "ViewState": "AgIAAE0EAAAAAAAAAAAqwF8EAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAHEEAAAAAAAAAAAEwIYEAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-17T13:08:41.19Z",
               "EditorCaption": ""
@@ -100,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Filters.cs",
               "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Sections\\Filters.cs",
               "RelativeDocumentMoniker": "Algorithms\\Sections\\Filters.cs",
@@ -112,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PointwiseOperations.cs",
               "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Sections\\PointwiseOperations.cs",
               "RelativeDocumentMoniker": "Algorithms\\Sections\\PointwiseOperations.cs",
@@ -124,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Utils.cs",
               "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Utilities\\Utils.cs",
               "RelativeDocumentMoniker": "Algorithms\\Utilities\\Utils.cs",
@@ -136,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "UiHelper.cs",
               "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\Utilities\\UiHelper.cs",
               "RelativeDocumentMoniker": "Framework\\Utilities\\UiHelper.cs",
@@ -148,7 +165,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "DrawingHelper.cs",
               "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\Utilities\\DrawingHelper.cs",
               "RelativeDocumentMoniker": "Framework\\Utilities\\DrawingHelper.cs",
@@ -160,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "FileHelper.cs",
               "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Framework\\Utilities\\FileHelper.cs",
               "RelativeDocumentMoniker": "Framework\\Utilities\\FileHelper.cs",
@@ -172,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "GeometricTransformations.cs",
               "DocumentMoniker": "C:\\Users\\CRISTIAN\\Git-projects\\PID_Projects\\Framework- varianta laborator 1\\Algorithms\\Sections\\GeometricTransformations.cs",
               "RelativeDocumentMoniker": "Algorithms\\Sections\\GeometricTransformations.cs",
